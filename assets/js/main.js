@@ -1,7 +1,7 @@
 var carta1 = {
   nome: 'Goku',
   imagem:
-    'https://kanto.legiaodosherois.com.br/w728-h381-gnw-cfill-gcc/wp-content/uploads/2021/11/legiao_l1eXa680RVMs.jpg.webp',
+    'https://i.pinimg.com/originals/9f/56/86/9f56864d78a102842211153235ac56ab.jpg',
   atributos: {
     ki: 8700,
     tecnicas: 8500,
@@ -31,7 +31,211 @@ var carta3 = {
   }
 }
 
-var cartas = [carta1, carta2, carta3]
+var carta4 = {
+  nome: 'Piccolo',
+  imagem:
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw5GvIM2rk-M0IU6coiWXajXNjYg5053lA2g&usqp=CAU',
+  atributos: {
+    ki: 8720,
+    tecnicas: 8530,
+    velocidade: 75
+  }
+}
+
+var carta5 = {
+  nome: 'Kuririn',
+  imagem:
+    'https://ovicio.com.br/wp-content/uploads/2021/07/20210715-kuririncover.jpg',
+  atributos: {
+    ki: 8530,
+    tecnicas: 8520,
+    velocidade: 65
+  }
+}
+
+var carta6 = {
+  nome: 'Yamcha',
+  imagem: 'https://upload.wikimedia.org/wikipedia/pt/a/a9/Yamcha.jpg',
+  atributos: {
+    ki: 8520,
+    tecnicas: 8490,
+    velocidade: 55
+  }
+}
+
+var carta7 = {
+  nome: 'Tenshinhan',
+  imagem:
+    'https://nerdhits.com.br/wp-content/uploads/2021/07/tenshinhan-tres-olhos-dragon-ball-1200x900.jpg',
+  atributos: {
+    ki: 8560,
+    tecnicas: 8540,
+    velocidade: 85
+  }
+}
+
+var carta8 = {
+  nome: 'Chaos',
+  imagem:
+    'http://pm1.narvii.com/6727/d823935ce2e050432c543a3b87f1429453fad0dfv2_00.jpg',
+  atributos: {
+    ki: 8550,
+    tecnicas: 8530,
+    velocidade: 35
+  }
+}
+
+var carta9 = {
+  nome: 'Bulma',
+  imagem:
+    'https://assets.reedpopcdn.com/bulma_dragonball_super.jpg/BROK/thumbnail/1200x1200/quality/100/bulma_dragonball_super.jpg',
+  atributos: {
+    ki: 8465,
+    tecnicas: 8470,
+    velocidade: 35
+  }
+}
+
+var carta10 = {
+  nome: 'Vegeta',
+  imagem: 'https://upload.wikimedia.org/wikipedia/pt/a/ac/Vegeta.jpg',
+  atributos: {
+    ki: 8770,
+    tecnicas: 8530,
+    velocidade: 115
+  }
+}
+
+var carta11 = {
+  nome: 'Mestre Kame',
+  imagem:
+    'https://criticalhits.com.br/wp-content/uploads/2021/12/mestre-kame.jpg',
+  atributos: {
+    ki: 8550,
+    tecnicas: 8540,
+    velocidade: 75
+  }
+}
+
+var carta12 = {
+  nome: 'Trunks',
+  imagem:
+    'https://nerdhits.com.br/wp-content/uploads/2021/07/trunks-do-futuro-cosplay-dragon-ball-1200x900.jpg',
+  atributos: {
+    ki: 8600,
+    tecnicas: 8497,
+    velocidade: 75
+  }
+}
+
+var carta13 = {
+  nome: 'Bills',
+  imagem: 'https://criticalhits.com.br/wp-content/uploads/2018/01/Bills.jpg',
+  atributos: {
+    ki: 9000,
+    tecnicas: 8896,
+    velocidade: 100
+  }
+}
+
+var carta14 = {
+  nome: 'Freeza',
+  imagem:
+    'https://uploads.jovemnerd.com.br/wp-content/uploads/2018/08/freeza-tenis-adidas-1210x540.png',
+  atributos: {
+    ki: 8679,
+    tecnicas: 8800,
+    velocidade: 99
+  }
+}
+
+var carta15 = {
+  nome: 'Broly',
+  imagem:
+    'https://www.comboinfinito.com.br/principal/wp-content/uploads/2018/12/Dragon-Ball-Super.jpg',
+  atributos: {
+    ki: 8901,
+    tecnicas: 8854,
+    velocidade: 93
+  }
+}
+
+var carta16 = {
+  nome: 'Goten',
+  imagem:
+    'https://pm1.narvii.com/6430/c466e8b2b46aecd9ecc00e7dfb37774328037fe2_hq.jpg',
+  atributos: {
+    ki: 8569,
+    tecnicas: 8541,
+    velocidade: 70
+  }
+}
+
+var carta17 = {
+  nome: 'Android 17',
+  imagem:
+    'https://nerdhits.com.br/wp-content/uploads/2021/12/android-17-1200x900.jpg',
+  atributos: {
+    ki: 8899,
+    tecnicas: 8893,
+    velocidade: 110
+  }
+}
+
+var carta18 = {
+  nome: 'Android 16',
+  imagem:
+    'http://pm1.narvii.com/6786/cd42d90e1cf5061c09593439d14e0c95e6e0d416v2_00.jpg',
+  atributos: {
+    ki: 8932,
+    tecnicas: 8879,
+    velocidade: 70
+  }
+}
+
+var carta19 = {
+  nome: 'Cell',
+  imagem: 'https://sm.ign.com/t/ign_br/screenshot/default/cell-1_ga33.1200.jpg',
+  atributos: {
+    ki: 8540,
+    tecnicas: 8550,
+    velocidade: 85
+  }
+}
+
+var carta20 = {
+  nome: 'Gohan',
+  imagem:
+    'https://epipoca.com.br/wp-content/uploads/2022/05/gohan-2-dragon-ball-super-super-hero-27052022-1200x900.jpg',
+  atributos: {
+    ki: 8677,
+    tecnicas: 8800,
+    velocidade: 75
+  }
+}
+
+var cartas = [
+  carta1,
+  carta2,
+  carta3,
+  carta4,
+  carta5,
+  carta6,
+  carta7,
+  carta8,
+  carta9,
+  carta10,
+  carta11,
+  carta12,
+  carta13,
+  carta14,
+  carta15,
+  carta16,
+  carta17,
+  carta18,
+  carta19,
+  carta20
+]
 var cartaMaquina = 0
 var cartaJogador = 0
 
@@ -45,7 +249,6 @@ function sortearCarta() {
   }
 
   cartaJogador = cartas[numeroCartaJogador]
-  console.log(cartaJogador)
 
   document.getElementById('btnSortear').disabled = true
   document.getElementById('btnJogar').disabled = false
