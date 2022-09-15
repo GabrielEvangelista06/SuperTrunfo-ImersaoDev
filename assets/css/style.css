@@ -1,5 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=MedievalSharp);
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+@import url(https://fonts.googleapis.com/css?family=Patua+One);
+
 body {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Segoe UI', monospace;
   min-height: 854px;
   background-image: url('https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-07-super-trunfo-bg.png');
   background-color: #000000;
@@ -16,6 +22,7 @@ body {
 
 .page-title {
   color: #ffffff;
+  font-family: 'MedievalSharp';
   margin: 5px 0;
 }
 
@@ -26,10 +33,12 @@ button,
   border-radius: 5px;
   border: none;
   font-size: 1rem;
+  font-family: 'Merriweather';
 }
 
 h2 {
   color: white;
+  font-family: 'Merriweather';
 }
 
 #carta-jogador,
@@ -43,10 +52,11 @@ h2 {
   display: flex;
   align-items: flex-end;
   position: relative;
-  background-size: 350px 300px;
+  text-align: left;
+  background-size: 350px 250px;
   background-repeat: no-repeat;
   background-position-x: 5px;
-  background-position-y: 10px;
+  background-position-y: 58px;
   border-radius: 33px;
 }
 
@@ -69,6 +79,7 @@ h2 {
   height: 160px;
   margin: 2rem;
   color: white;
+  font-family: 'Merriweather';
   z-index: 2;
 }
 
@@ -79,6 +90,7 @@ h2 {
 .resultado-final {
   color: white;
   font-size: 2rem;
+  font-family: 'Patua One';
   text-transform: uppercase;
   font-weight: bolder;
   padding: 1rem;
@@ -107,6 +119,7 @@ form {
   top: 16px;
   left: 37px;
   font-weight: 800;
+  font-family: 'Patua One';
   text-transform: uppercase;
 }
 

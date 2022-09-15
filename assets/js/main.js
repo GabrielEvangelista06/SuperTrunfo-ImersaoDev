@@ -214,7 +214,7 @@ var carta20 = {
   }
 }
 
-var cartas = [
+var deckJogador = [
   carta1,
   carta2,
   carta3,
@@ -224,7 +224,10 @@ var cartas = [
   carta7,
   carta8,
   carta9,
-  carta10,
+  carta10
+]
+
+var deckMaquina = [
   carta11,
   carta12,
   carta13,
@@ -236,19 +239,17 @@ var cartas = [
   carta19,
   carta20
 ]
+
 var cartaMaquina = 0
 var cartaJogador = 0
 
 function sortearCarta() {
-  var numeroCartaMaquina = parseInt(Math.random() * cartas.length)
-  cartaMaquina = cartas[numeroCartaMaquina]
+  var numeroCartaMaquina = parseInt(Math.random() * deckMaquina.length)
+  cartaMaquina = deckMaquina[numeroCartaMaquina]
 
-  var numeroCartaJogador = parseInt(Math.random() * cartas.length)
-  while (numeroCartaMaquina == numeroCartaJogador) {
-    numeroCartaJogador = parseInt(Math.random() * cartas.length)
-  }
+  var numeroCartaJogador = parseInt(Math.random() * deckJogador.length)
 
-  cartaJogador = cartas[numeroCartaJogador]
+  cartaJogador = deckJogador[numeroCartaJogador]
 
   document.getElementById('btnSortear').disabled = true
   document.getElementById('btnJogar').disabled = false
@@ -264,32 +265,40 @@ function obtemAtributoSelecionado() {
       return radioAtributos[i].value
     }
   }
+  alert('Escolha um dos 3 atributos de sua carta para jogar!!')
+}
+
+function adcionarCartaERemoverCarta(cartaEmJogo, deckGanhador, deckPerdedor) {
+  deckGanhador.push(cartaEmJogo)
+  deckPerdedor.splice(cartaEmJogo)
 }
 
 function jogar() {
-  var atributoSelecionado = obtemAtributoSelecionado()
   var divResultado = document.getElementById('resultado')
+  var atributoSelecionado = obtemAtributoSelecionado()
+  var valorCartaJogador = cartaJogador.atributos[atributoSelecionado]
+  var valorCartaMaquina = cartaMaquina.atributos[atributoSelecionado]
 
-  if (
-    cartaJogador.atributos[atributoSelecionado] >
-    cartaMaquina.atributos[atributoSelecionado]
-  ) {
+  if (valorCartaJogador > valorCartaMaquina) {
     htmlResultado =
       "<p class='resultado-final'>Você venceu!! O atributo " +
       atributoSelecionado +
       ' da sua carta é maior do que o atributo ' +
       atributoSelecionado +
       ' da carta do oponente</p>'
-  } else if (
-    cartaJogador.atributos[atributoSelecionado] <
-    cartaMaquina.atributos[atributoSelecionado]
-  ) {
+
+    adcionarCartaERemoverCarta(cartaMaquina, deckJogador, deckMaquina)
+  } else if (valorCartaJogador < valorCartaMaquina) {
     htmlResultado =
       "<p class='resultado-final'>Você perdeu!!! O atributo " +
       atributoSelecionado +
       ' da sua carta é menor do que o atributo ' +
       atributoSelecionado +
       ' da carta do oponente</p>'
+
+    adcionarCartaERemoverCarta(cartaJogador, deckMaquina, deckJogador)
+  } else if (valorCartaJogador === undefined || valorCartaMaquina) {
+    return
   } else {
     htmlResultado =
       "<p class='resultado-final'>Empate!! O atributo " +
